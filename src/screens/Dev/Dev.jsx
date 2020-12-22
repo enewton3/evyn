@@ -1,5 +1,9 @@
-import React from "react";
+import Layout from "../../components/shared/Layout";
 
 export default function Dev() {
-  return <div>DEV PAGE</div>;
+  return (
+    <Layout>
+      <div>DEV PAGE</div>
+    </Layout>
+  );
 }

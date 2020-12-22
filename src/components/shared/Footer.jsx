@@ -1,3 +1,3 @@
 export default function Footer() {
-  return <div></div>;
+  return <div>Copyright 2020 Evyn Newton</div>;
 }
