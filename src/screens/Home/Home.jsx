@@ -1,6 +1,5 @@
 import Layout from "../../components/shared/Layout";
 import HomeImg from "../../images/home.jpg";
-// const HomeImg = require("../../assets/home.jpg");
 
 export default function Home() {
   return (
@@ -14,9 +13,11 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="m-auto bg-gray-500 bg-opacity-90 p-10 rounded">
-          <div className="text-7xl text-gray-200">Evyn Newton</div>
-          <div className="text-5xl text-gray-300">
+        <div className="me m-auto bg-gray-500 bg-opacity-90 md:p-10 p-5 rounded">
+          <div className="name md:text-7xl text-4xl text-gray-200">
+            Evyn Newton
+          </div>
+          <div className="blurb md:text-5xl text-2xl text-gray-300">
             Software Developer and Theatrical Lighting Designer
           </div>
         </div>
