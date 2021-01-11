@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { CSSTransition } from "react-transition-group";
 import NavLinks from "./NavLinks";
+import Logo from "./Logo";
 import "./Nav.css";
 
 export default function Nav() {
@@ -23,11 +23,7 @@ export default function Nav() {
 
   return (
     <nav className="nav">
-      <div className="logo">
-        <Link className="logo-name" to="/">
-          Evyn Newton
-        </Link>
-      </div>
+      <Logo />
       {window.innerWidth >= 1024 ? (
         <NavLinks
           setToggleBurger={setToggleBurger}

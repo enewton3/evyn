@@ -1,16 +1,18 @@
 .selected-projects-all {
   padding: 5vh 1vw 5vh 1vw;
+  background-color: black;
 }
 
 .selected-projects-head {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
 }
 
 .selected-projects {
   display: flex;
   flex-flow: row nowrap;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .selected-projects > div {

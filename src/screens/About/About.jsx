@@ -1,5 +1,6 @@
 import evynFace from "../../images/evynface.jpg";
 import Layout from "../../components/shared/Layout";
+// import SectionLine from "../../components/SectionLine/SectionLine";
 // import "./About.css";
 
 export default function About() {

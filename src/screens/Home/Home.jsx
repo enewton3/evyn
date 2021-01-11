@@ -2,12 +2,13 @@ import Layout from "../../components/shared/Layout";
 import HomeImg from "../../images/home.jpg";
 import AboutComponent from "../../components/AboutComponent/AboutComponent";
 import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
+import "./Home.css";
 
 export default function Home() {
   return (
     <Layout>
       <div
-        className="w-full h-screen flex justify-center"
+        className="main-home-photo"
         style={{
           backgroundImage: `url(${HomeImg})`,
           backgroundPosition: "left",
@@ -15,11 +16,9 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="me m-auto bg-gray-500 bg-opacity-90 md:p-10 p-5 rounded">
-          <div className="name md:text-7xl text-4xl text-gray-200">
-            Evyn Newton
-          </div>
-          <div className="blurb md:text-5xl text-2xl text-gray-300">
+        <div className="me">
+          <div className="name">Evyn Newton</div>
+          <div className="blurb ">
             Software Developer and Theatrical Lighting Designer
           </div>
         </div>

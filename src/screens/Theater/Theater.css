@@ -1,0 +1,14 @@
+.theater-portfolio {
+  padding: 10vh;
+  background-color: black;
+  color: white;
+}
+
+.theater-header {
+  margin: 0 15vw 0 15vw;
+  padding: 2vh;
+  text-align: center;
+  /* background-color: #303947cd; */
+  color: whitesmoke;
+  font-size: 3rem;
+}

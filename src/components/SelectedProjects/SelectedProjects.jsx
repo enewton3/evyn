@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { baseURL, config } from "../../services";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
+import SectionLine from "../SectionLine/SectionLine";
 import "./SelectedProjects.css";
 
 export default function SelectedProjects() {
@@ -21,8 +22,9 @@ export default function SelectedProjects() {
   }, []);
 
   return (
-    <div className="selected-projects-all">
+    <div className="selected-projects-all" id="selected-projects">
       <div className="selected-projects-head">Projects</div>
+      <SectionLine />
       <div className="selected-projects">
         {projects.map((item) => (
           <PortfolioCard key={item.id} project={item.fields} />

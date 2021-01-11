@@ -6,12 +6,13 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col py-5 bg-gray-500 text-white">
-      <div className="text-5xl m-auto py-3">Get In Touch!</div>
-      <div className="icons text-4xl flex flex-row justify-evenly w-1/2 m-auto px-1 py-2">
+    <section className="contact">
+      <div className="contact-header">Get In Touch!</div>
+      <div className="contact-icons">
         <div className="email">
           <a href="mailto: newton.evyn@gmail.com">
             <FontAwesomeIcon icon={faAt} />

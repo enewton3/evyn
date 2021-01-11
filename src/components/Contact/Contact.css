@@ -1,0 +1,45 @@
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2vh 0 2vh 0;
+  color: white;
+  background-color: black;
+  border-top: 1px solid white;
+}
+
+.contact-header {
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1vh 0 1vh 0;
+}
+
+.contact-icons {
+  font-size: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.email,
+.insta,
+.facebook,
+.linkedin,
+.github {
+  padding: 2px;
+  border: none;
+  border-radius: 30px;
+  width: 50px;
+  align-self: center;
+}
+
+.email:hover,
+.insta:hover,
+.facebook:hover,
+.linkedin:hover,
+.github:hover {
+  background: #303947;
+}
