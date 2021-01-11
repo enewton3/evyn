@@ -1,5 +1,7 @@
 import Layout from "../../components/shared/Layout";
 import HomeImg from "../../images/home.jpg";
+import AboutComponent from "../../components/AboutComponent/AboutComponent";
+import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <AboutComponent />
+      <SelectedProjects />
     </Layout>
   );
 }

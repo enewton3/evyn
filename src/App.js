@@ -6,7 +6,8 @@ import Dev from "./screens/Dev/Dev";
 import Theater from "./screens/Theater/Theater";
 import Resume from "./screens/Resume/Resume";
 import Portfolio from "./screens/Portfolio/Portfolio";
-// import Contact from "./screens/Contact/Contact";
+import Contact from "./screens/Contact/Contact";
+import OtherProjects from "./screens/OtherProjects/OtherProjects";
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        {/* <Route path="/contact">
+        <Route path="/contact">
           <Contact />
-        </Route> */}
+        </Route>
         <Route path="/dev">
           <Dev />
         </Route>
@@ -41,6 +42,9 @@ function App() {
         </Route>
         <Route path="/theater/portfolio/:type">
           <Portfolio />
+        </Route>
+        <Route path="/other">
+          <OtherProjects />
         </Route>
       </Switch>
     </div>

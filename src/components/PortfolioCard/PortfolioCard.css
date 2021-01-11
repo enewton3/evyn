@@ -1,0 +1,56 @@
+.portfolio-card {
+  display: grid;
+  grid-template-areas:
+    "photo photo"
+    "photo photo"
+    /* "photo photo" */
+    "name name"
+    "desc desc"
+    "github link";
+  width: 33vw;
+  height: 100%;
+  margin: 1vh 1vw 1vh 1vw;
+  border: 2px solid rgb(63, 62, 62);
+  border-radius: 7px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #303947cd;
+  color: whitesmoke;
+}
+
+.portfolio-card:hover {
+  box-shadow: 5px 5px 5px grey;
+  /* transform: scale(1.08); */
+}
+
+.project-photo {
+  grid-area: photo;
+  width: 100%;
+  /* padding: 10px 30px 0 30px; */
+}
+
+.project-name {
+  grid-area: name;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.project-notes {
+  grid-area: desc;
+  font-size: 0.8rem;
+  padding: 0 20px 0 20px;
+}
+
+.gh-icon {
+  grid-area: github;
+  font-size: 1.5rem;
+}
+
+.external-icon {
+  grid-area: link;
+  font-size: 1.5rem;
+}

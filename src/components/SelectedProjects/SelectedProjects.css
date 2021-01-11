@@ -1,0 +1,18 @@
+.selected-projects-all {
+  padding: 5vh 1vw 5vh 1vw;
+}
+
+.selected-projects-head {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.selected-projects {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: white;
+}
+
+.selected-projects > div {
+  min-height: 35vh;
+}

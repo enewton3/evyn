@@ -1,0 +1,22 @@
+.dev-all {
+  background-color: #c2c2c2;
+  height: 100%;
+  width: 100%;
+}
+
+.dev-head {
+  margin: 0 20vw 0 20vw;
+  padding: 2vh;
+  text-align: center;
+  background-color: #303947cd;
+  color: whitesmoke;
+  font-size: 3rem;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.dev-portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 8vh 10vw 10vh 10vw;
+}

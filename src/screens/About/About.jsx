@@ -1,6 +1,6 @@
-import Layout from "../../components/shared/Layout";
 import evynFace from "../../images/evynface.jpg";
-import "./About.css";
+import Layout from "../../components/shared/Layout";
+// import "./About.css";
 
 export default function About() {
   return (
