@@ -6,7 +6,7 @@ import Dev from "./screens/Dev/Dev";
 import Theater from "./screens/Theater/Theater";
 import Resume from "./screens/Resume/Resume";
 import Portfolio from "./screens/Portfolio/Portfolio";
-import Contact from "./screens/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 import OtherProjects from "./screens/OtherProjects/OtherProjects";
 
 function App() {
