@@ -1,5 +1,5 @@
 .theater-portfolio {
-  padding: 10vh;
+  padding: 10vh 0 10vh 0;
   background-color: black;
   color: white;
 }
@@ -8,7 +8,105 @@
   margin: 0 15vw 0 15vw;
   padding: 2vh;
   text-align: center;
-  /* background-color: #303947cd; */
   color: whitesmoke;
   font-size: 3rem;
+}
+
+.carousel-theater {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.slides-theater {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide-theater {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid white; */
+  transition: all 1.2s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: none;
+}
+.carousel-slide-next-theater {
+  display: block;
+  width: 0vw;
+  height: 0vh;
+  transform: translate(100vw);
+}
+
+.carousel-slide-active-theater {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translate(0);
+}
+.carousel-slide-last-theater {
+  display: block;
+  width: 0vw;
+  height: 0vh;
+  transform: translate(-100vw);
+}
+
+.indicators-theater {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  filter: none;
+  align-items: center;
+  display: none;
+}
+/* .carousel-nav-theater {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  filter: none;
+} */
+.carousel-indicator-theater {
+  background-color: rgba(128, 128, 128, 0.831);
+  border: 0.1vw solid rgba(41, 41, 41, 0.68);
+  margin-top: -2.5vw;
+  width: 2.5vw;
+  height: 0.3vh;
+  justify-self: baseline;
+  display: none;
+}
+
+.carousel-indicator-active-theater {
+  background-color: rgb(57, 57, 57);
+}
+
+/* .carousel-arrow-left-theater {
+  transform: translate(20vw);
+} */
+
+.carousel-arrow-left-theater,
+.carousel-arrow-right-theater {
+  color: rgb(133, 133, 133);
+  background-color: rgba(165, 153, 153, 0.2);
+  padding: 10px;
+  z-index: 60;
+  /* display: none; */
+}
+.carousel-arrow-left-theater:hover,
+.carousel-arrow-right-theater:hover,
+.carousel-indicator-theater:hover {
+  background-color: rgba(165, 153, 153, 0.5) !important;
+}
+@media only screen and (max-width: 1200px) {
+  .carousel-theater {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
 }
