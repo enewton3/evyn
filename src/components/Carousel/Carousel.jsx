@@ -52,6 +52,7 @@ export default function Carousel(props) {
         {source.map((item, index) => {
           return (
             <Slide
+              key={`s${index}`}
               index={index}
               source={item}
               currentIndex={currentIndex}
