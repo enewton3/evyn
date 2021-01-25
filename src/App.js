@@ -7,7 +7,7 @@ import Theater from "./screens/Theater/Theater";
 import Resume from "./screens/Resume/Resume";
 import Portfolio from "./screens/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-import OtherProjects from "./screens/OtherProjects/OtherProjects";
+// import OtherProjects from "./screens/OtherProjects/OtherProjects";
 
 function App() {
   return (
@@ -43,9 +43,9 @@ function App() {
         <Route path="/theater/portfolio/:type">
           <Portfolio />
         </Route>
-        <Route path="/other">
+        {/* <Route path="/other">
           <OtherProjects />
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   );

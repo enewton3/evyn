@@ -11,15 +11,13 @@
   border-radius: 20px;
   padding: 2vw;
 }
-/* me m-auto bg-gray-500 bg-opacity-90 md:p-10 p-5 rounded */
+
 .name {
   font-size: 5rem;
   color: white;
-  /* md: text-7xl text-4xl text-gray-200; */
 }
 
 .blurb {
   color: rgb(161, 160, 160);
   font-size: 3rem;
-  /* md:text-5xl text-2xl text-gray-300 */
 }

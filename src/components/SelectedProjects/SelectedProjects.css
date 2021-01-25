@@ -1,5 +1,5 @@
 .selected-projects-all {
-  padding: 5vh 1vw 5vh 1vw;
+  padding: 5vh 1vw 10vh 1vw;
   background-color: black;
 }
 
@@ -12,7 +12,6 @@
 .selected-projects {
   display: flex;
   flex-flow: row nowrap;
-  /* background-color: white; */
 }
 
 .selected-projects > div {

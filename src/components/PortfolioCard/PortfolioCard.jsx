@@ -15,10 +15,20 @@ export default function PortfolioCard(props) {
       />
       <div className="project-name">{project.name}</div>
       <div className="project-notes">{project.notes}</div>
-      <a className="gh-icon" href={project.githubLink}>
+      <a
+        className="gh-icon"
+        href={project.githubLink}
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a className="external-icon" href={project.URL}>
+      <a
+        className="external-icon"
+        href={project.URL}
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
       </a>
     </div>

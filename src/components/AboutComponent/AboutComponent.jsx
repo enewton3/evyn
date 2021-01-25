@@ -18,7 +18,9 @@ export default function AboutComponent() {
           personally and professionally, I diligently approach tasks to
           efficiently find the best solution. I am excited to apply the same
           collaborative and problem-solving attitude, that I learned while
-          working in the theater, to software development.{" "}
+          working in the theater, to software development.
+           
+          {" "}
         </div>
       </div>
     </div>
