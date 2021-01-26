@@ -13,10 +13,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/evyn" />
-        </Route>
-        <Route path="/evyn">
+        <Route path="/">
           <Home />
         </Route>
         <Route path="/about">

@@ -21,3 +21,19 @@
   color: rgb(161, 160, 160);
   font-size: 3rem;
 }
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 4rem;
+  }
+  .blurb {
+    font-size: 2rem;
+    padding: 2vw;
+  }
+  .me {
+    padding: 3vw;
+    width: 100vw;
+    margin: 20vh 1vw 20vh 1vw;
+    text-align: center;
+  }
+}

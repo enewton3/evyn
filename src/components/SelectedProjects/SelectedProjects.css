@@ -17,3 +17,10 @@
 .selected-projects > div {
   min-height: 35vh;
 }
+
+@media (max-width: 500px) {
+  .selected-projects {
+    flex-flow: column wrap;
+    width: 100vw;
+  }
+}

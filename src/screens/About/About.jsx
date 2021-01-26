@@ -8,7 +8,7 @@ export default function About() {
     <Layout>
       <div className="about-container" id="about">
         <div className="about-header">
-          <div className="text-5xl">About Me</div>
+          <div className="about-head">About Me</div>
           <SectionLine />
         </div>
         <div className="about-details">

@@ -54,3 +54,10 @@
   grid-area: link;
   font-size: 1.5rem;
 }
+
+@media (max-width: 500px) {
+  .portfolio-card {
+    width: 80vw;
+    align-self: center;
+  }
+}

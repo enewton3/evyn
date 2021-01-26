@@ -1,5 +1,4 @@
 .dev-all {
-  /* background-color: #c2c2c2; */
   background-color: black;
   height: 100%;
   width: 100%;
@@ -10,10 +9,8 @@
   margin: 0 20vw 0 20vw;
   padding: 2vh;
   text-align: center;
-  /* background-color: #303947cd; */
   color: whitesmoke;
   font-size: 3rem;
-  /* box-shadow: 5px 5px 5px grey; */
 }
 
 .dev-portfolio {
@@ -21,4 +18,13 @@
   justify-content: space-around;
   flex-flow: row wrap;
   padding: 8vh 10vw 10vh 10vw;
+}
+
+@media (max-width: 500px) {
+  .dev-head {
+    font-size: 2rem;
+  }
+  .dev-portfolio {
+    padding-top: 0vh;
+  }
 }
