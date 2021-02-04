@@ -12,15 +12,13 @@ export default function AboutComponent() {
       <div className="about-details">
         <img src={evynFace} alt="Evyn's Face" className="face" />
         <div className="about-blurb">
-          Hi there, I'm Evyn. a detail-oriented theater technician turned
-          software developer accustomed to keeping a cool head while working in
+          Hi there, I'm Evyn. I am a detail-oriented theater technician turned
+          software developer, accustomed to keeping a cool head while working in
           high-paced environments. Continually looking to learn and grow both
           personally and professionally, I diligently approach tasks to
           efficiently find the best solution. I am excited to apply the same
           collaborative and problem-solving attitude, that I learned while
-          working in the theater, to software development.
-           
-          {" "}
+          working in the theater, to software development.{" "}
         </div>
       </div>
     </div>
