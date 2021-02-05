@@ -8,13 +8,22 @@ export default function PortfolioCard(props) {
 
   return (
     <div className="portfolio-card">
-      <img
+      <a
         className="project-photo"
-        src={project.photo ? project.photo[0].url : null}
-        alt={project.name}
-      />
-      <div className="project-name">{project.name}</div>
-      <div className="project-notes">{project.notes}</div>
+        href={project.URL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          className="project-photo"
+          src={project.photo ? project.photo[0].url : null}
+          alt={project.name}
+        />
+
+        <div className="project-name">{project.name}</div>
+
+        <div className="project-notes">{project.notes}</div>
+      </a>
       <a
         className="gh-icon"
         href={project.githubLink}
