@@ -1,9 +1,9 @@
-.about-head {
+.about-page-head {
   padding-top: 5vh;
   font-size: 3rem;
 }
 
-/* .about-container {
+.about-page-container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -14,35 +14,54 @@
   text-align: center;
 }
 
-.about-details {
+.about-page-details {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.face {
+.about-page-face {
   height: 24rem;
   border-radius: 9999px;
   box-shadow: 0px 0px 100px grey;
 }
 
-.about-blurb {
+.about-page-blurb {
   display: flex;
   flex-flow: column nowrap;
   padding: 5rem;
   width: 50%;
 }
 
+.resume-button {
+  color: rgb(226, 193, 4);
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  margin: 0 auto;
+  border-radius: 0.375rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.resume-button:hover {
+  background: #303947;
+  color: white;
+}
+
 @media only screen and (max-width: 1200px) {
-  .about-container {
+  .about-page-container {
     padding: 10vh 0 10vh 0;
+  }
+  .about-page-blurb {
+    padding: 2vh 0 0 0;
+    width: 80vw;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .about-blurb {
-    padding: 1vh 0 0 0;
+  .about-page-face {
+    height: auto;
     width: 80vw;
   }
-} */
+}

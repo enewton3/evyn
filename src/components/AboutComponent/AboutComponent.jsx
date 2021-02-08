@@ -1,5 +1,6 @@
 import evynFace from "../../images/evynface.jpg";
 import SectionLine from "../SectionLine/SectionLine";
+import { Link } from "react-router-dom";
 import "./AboutComponent.css";
 
 export default function AboutComponent() {
@@ -19,6 +20,9 @@ export default function AboutComponent() {
           efficiently find the best solution. I am excited to apply the same
           collaborative and problem-solving attitude, that I learned while
           working in the theater, to software development.{" "}
+          <Link to="/about" className="read-more-link">
+            Read more!
+          </Link>
         </div>
       </div>
     </div>

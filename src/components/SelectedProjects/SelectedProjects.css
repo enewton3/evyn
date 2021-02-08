@@ -15,11 +15,22 @@
 }
 
 .selected-projects > div {
-  min-height: 35vh;
+  min-height: 90%;
+  max-height: 100%;
 }
 
+@media (max-width: 800px) {
+  .selected-projects {
+    display: grid;
+    grid-template-areas: "1 2";
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;
+  }
+}
 @media (max-width: 500px) {
   .selected-projects {
+    display: flex;
     flex-flow: column wrap;
     width: 100vw;
   }

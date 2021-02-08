@@ -1,0 +1,45 @@
+.languages-head {
+  padding-top: 5vh;
+  font-size: 2.5rem;
+}
+
+.languages-container {
+  display: grid;
+  grid-template-areas: "1 2 3 4";
+  margin: 1vh auto;
+  padding: 5vh 0 5vh 0;
+  column-gap: 2vw;
+  row-gap: 2vh;
+}
+
+.language-div {
+  font-size: 1.5rem;
+  padding: 1vh 1vw 1vh 1vw;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-icon {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .languages-container {
+    grid-template-areas: "1 2 3";
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .languages-container {
+    grid-template-areas: "1 2";
+  }
+  .language-div {
+    font-size: 1rem;
+  }
+  .language-icon {
+    font-size: 1.5rem;
+  }
+}
