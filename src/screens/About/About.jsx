@@ -30,6 +30,8 @@ export default function About() {
             <a
               className="resume-button"
               href="https://drive.google.com/file/d/1vSAd-oBCoSwy6X4eEW9GV1e-n0WhK9ZG/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
             >
               Download Resume
             </a>
