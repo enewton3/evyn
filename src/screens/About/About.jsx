@@ -29,7 +29,7 @@ export default function About() {
             currently learning the cello.
             <a
               className="resume-button"
-              href="https://drive.google.com/file/d/1vSAd-oBCoSwy6X4eEW9GV1e-n0WhK9ZG/view?usp=sharing"
+              href="https://drive.google.com/file/d/1GAGGA9hIx-HFnbSYfJgjvOapqcglb6Se/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
