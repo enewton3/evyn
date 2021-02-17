@@ -26,7 +26,7 @@ export default function About() {
             <br />I am a Boston, MA based software developer and theatrical
             lighting designer. I am a transit, infrastructure, and music nerd.
             In addition to learning different programming languages, I am also
-            currently learning the cello.
+            currently learning the cello!
             <a
               className="resume-button"
               href="https://drive.google.com/file/d/1GAGGA9hIx-HFnbSYfJgjvOapqcglb6Se/view?usp=sharing"
