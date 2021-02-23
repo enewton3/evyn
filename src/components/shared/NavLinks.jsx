@@ -23,9 +23,9 @@ export default function NavLinks(props) {
       {/* <Link className="nav-link" to="/other" onClick={handleLinkClick}>
         Other Projects
       </Link> */}
-      {/* <Link className="nav-link" to={"/contact"} onClick={handleLinkClick}>
+      <Link className="nav-link" to={"/contact"} onClick={handleLinkClick}>
         Contact
-      </Link> */}
+      </Link>
     </div>
   );
 }

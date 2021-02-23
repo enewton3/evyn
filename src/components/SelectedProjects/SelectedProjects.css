@@ -19,7 +19,14 @@
   max-height: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .selected-projects {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 800px) {
   .selected-projects {
     display: grid;
     grid-template-areas: "1 2";
@@ -27,7 +34,8 @@
     justify-content: center;
     row-gap: 2vh;
   }
-}
+} */
+
 @media (max-width: 500px) {
   .selected-projects {
     display: flex;

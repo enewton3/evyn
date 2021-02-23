@@ -26,9 +26,11 @@ export default function SelectedProjects() {
       <div className="selected-projects-head">Projects</div>
       <SectionLine />
       <div className="selected-projects">
-        {projects.map((item) => (
-          <PortfolioCard key={item.id} project={item.fields} />
-        ))}
+        {projects.map((item, index) =>
+          index < 5 ? (
+            <PortfolioCard key={item.id} project={item.fields} />
+          ) : null
+        )}
       </div>
     </div>
   );
