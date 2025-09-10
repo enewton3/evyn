@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./screens/Home/Home";
 import About from "./screens/About/About";
@@ -14,38 +14,18 @@ function App() {
   return (
     <div className="App">
       <ScrollToTop>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/dev">
-            <Dev />
-          </Route>
-          <Route path="/dev/resume/:type">
-            <Resume />
-          </Route>
-          <Route path="/dev/portfolio/:type">
-            <Portfolio />
-          </Route>
-          <Route path="/theater">
-            <Theater />
-          </Route>
-          <Route path="/theater/resume/:type">
-            <Resume />
-          </Route>
-          <Route path="/theater/portfolio/:type">
-            <Portfolio />
-          </Route>
-          {/* <Route path="/other">
-          <OtherProjects />
-        </Route> */}
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/dev" element={<Dev />} />
+          <Route path="/dev/resume/:type" element={<Resume />} />
+          <Route path="/dev/portfolio/:type" element={<Portfolio />} />
+          <Route path="/theater" element={<Theater />} />
+          <Route path="/theater/resume/:type" element={<Resume />} />
+          <Route path="/theater/portfolio/:type" element={<Portfolio />} />
+          {/* <Route path="/other" element={<OtherProjects />} /> */}
+        </Routes>
       </ScrollToTop>
     </div>
   );

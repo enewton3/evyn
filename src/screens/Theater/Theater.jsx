@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { baseURL, config } from "../../services";
-import axios from "axios";
+import { getTheatreProjects } from "../../services/airtable";
 import Layout from "../../components/shared/Layout";
 import SectionLine from "../../components/SectionLine/SectionLine";
 import Carousel from "../../components/Carousel/Carousel";
@@ -9,10 +8,9 @@ import "./Theater.css";
 export default function Theater() {
   const [projects, setProjects] = useState([]);
   const getProjects = async () => {
-    const devURL = `${baseURL}/lightingProjects`;
     try {
-      const response = await axios.get(devURL, config);
-      setProjects(response.data.records);
+      const response = await getTheatreProjects();
+      setProjects(response);
     } catch (error) {
       console.log(error);
     }

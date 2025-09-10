@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { CSSTransition } from "react-transition-group";
@@ -8,23 +9,28 @@ import "./Nav.css";
 
 export default function Nav() {
   const [toggleBurger, setToggleBurger] = useState(false);
-
-  const handleResize = () => {
-    if (window.innerWidth >= 1024) {
-      setToggleBurger(true);
-    } else if (window.innerWidth < 1024) {
-      setToggleBurger(false);
-    }
-  };
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const navLinksRef = useRef(null);
 
   useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      if (window.innerWidth >= 1024) {
+        setToggleBurger(true);
+      } else {
+        setToggleBurger(false);
+      }
+    };
     window.addEventListener("resize", handleResize);
-  });
+    // Set initial state
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <nav className="nav">
       <Logo />
-      {window.innerWidth >= 1024 ? (
+      {windowWidth >= 1024 ? (
         <NavLinks
           setToggleBurger={setToggleBurger}
           toggleBurger={toggleBurger}
@@ -35,10 +41,12 @@ export default function Nav() {
           timeout={300}
           classNames={"nav-links"}
           unmountOnExit
+          nodeRef={navLinksRef}
         >
           <NavLinks
             setToggleBurger={setToggleBurger}
             toggleBurger={toggleBurger}
+            ref={navLinksRef}
           />
         </CSSTransition>
       )}

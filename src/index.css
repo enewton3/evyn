@@ -1,3 +1,16 @@
+/* Remove default anchor tag styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

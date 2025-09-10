@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
-import { baseURL, config } from "../../services";
+import { getDevProjects } from "../../services/airtable";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import SectionLine from "../SectionLine/SectionLine";
 import "./SelectedProjects.css";
@@ -8,10 +7,9 @@ import "./SelectedProjects.css";
 export default function SelectedProjects() {
   const [projects, setProjects] = useState([]);
   const getProjects = async () => {
-    const devURL = `${baseURL}/devProjects`;
     try {
-      const response = await axios.get(devURL, config);
-      setProjects(response.data.records);
+      const response = await getDevProjects();
+      setProjects(response);
     } catch (error) {
       console.log(error);
     }
